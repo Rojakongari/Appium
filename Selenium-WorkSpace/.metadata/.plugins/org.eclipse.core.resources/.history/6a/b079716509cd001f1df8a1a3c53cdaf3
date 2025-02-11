@@ -1,0 +1,20 @@
+package testMethods;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
+
+import mainMethods.baseTest;
+import pages.SearchPage;
+
+public class testrunner extends baseTest{
+	WebDriver driver;
+	SearchPage pfsearch;
+	
+	@Test
+	public void searchoperation()
+	{
+		pfsearch = new SearchPage(driver);
+		pfsearch.searchgoogle();
+	}
+
+}

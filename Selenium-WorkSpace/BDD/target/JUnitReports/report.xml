@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.13" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="Check home page functionality" name="verify homepage" time="0.018">
+<failure/>
+<system-out><![CDATA[
+Given user is on login page.................................................undefined
+When user enters username and password......................................skipped
+And clicks on login button..................................................skipped
+Then user is navigated to the homepage......................................skipped
+Then OrangeHRM image is displayed...........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Check home page functionality" name="click on Admin" time="0.005">
+<failure/>
+<system-out><![CDATA[
+Given user is on login page.................................................undefined
+When user enters username and password......................................skipped
+And clicks on login button..................................................skipped
+Then user is navigated to the homepage......................................skipped
+When user clicks on Admin...................................................skipped
+Then Admin page is displayed................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

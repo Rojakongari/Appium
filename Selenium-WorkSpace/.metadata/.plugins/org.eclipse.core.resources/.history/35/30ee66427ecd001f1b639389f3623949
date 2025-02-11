@@ -1,0 +1,52 @@
+package stepDefinitions;
+
+import org.openqa.selenium.WebDriver;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pages.LoginPage_PF;
+
+public class StepsforBackground {
+	WebDriver driver =null;
+	LoginPage_PF login;
+	
+	@Given("user is on login page")
+	public void user_is_on_login_page() {
+	    
+	}
+	
+	@When("user enters username and password")
+	public void user_enters_username_and_password() {
+	}
+	
+	@When("clicks on login button")
+	public void clicks_on_login_button() {
+	    
+	}
+	
+	@Then("user is navigated to the homepage")
+	public void user_is_navigated_to_the_homepage() {
+	   	}
+	
+	@Then("OrangeHRM image is displayed")
+	public void orange_hrm_image_is_displayed() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	
+	@When("user clicks on Admin")
+	public void user_clicks_on_admin() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("Admin page is displayed")
+	public void admin_page_is_displayed() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+
+
+
+}
