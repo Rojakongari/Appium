@@ -1,0 +1,13 @@
+package Browserstack;
+
+import org.openqa.selenium.remote.DesiredCapabilities;
+
+public class SeleniumWithBrowserStack {
+	public static void main(String[] args)
+	{
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("os", "windows");
+		
+	}
+
+}

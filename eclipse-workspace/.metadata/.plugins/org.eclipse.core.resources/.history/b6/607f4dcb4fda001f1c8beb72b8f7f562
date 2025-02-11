@@ -1,0 +1,44 @@
+package Browserstack;
+
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URISyntaxException;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.net.URL;
+
+public class SeleniumWithBrowserStack {
+	public static final String UserName ="rojasamala_xzhuj6";
+	public static final String AutomateKey="yaRp3MtYq2tp1qboEQAy";
+	public static final String  URL = "https://"+UserName+":"+AutomateKey+"@hub-cloud.browserstack.com/wd/hub";
+	
+	public static void main(String[] args) throws MalformedURLException, InterruptedException, URISyntaxException
+	{
+		DesiredCapabilities caps = new DesiredCapabilities();
+		caps.setCapability("os", "Windows");
+		caps.setCapability("os_version", "10");
+		caps.setCapability("browser", "Chrome");
+		caps.setCapability("browser_version", "132");
+		caps.setCapability("name", "Roja Automation");
+		
+		//WebDriver driver = new RemoteWebDriver(new URL (URL),caps);
+		WebDriver driver = new RemoteWebDriver(new URI(URL).toURL(),caps);
+		
+		driver.get("https://www.onlinesbi.sbi/");
+        Thread.sleep(10000);
+         WebElement login = driver.findElement(By.xpath("//span[@class='classicTxt']"));
+         login.click();
+         driver.getTitle();
+         driver.quit();
+		
+		
+						
+		
+	}
+
+}
